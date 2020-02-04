@@ -1,0 +1,225 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - BonMot (5.4.1)
+  - CGFloatLiteral (0.5.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - CocoaLumberjack/Swift (3.6.0):
+    - CocoaLumberjack/Core
+  - Differentiator (4.0.1)
+  - Moya (14.0.0-beta.6):
+    - Moya/Core (= 14.0.0-beta.6)
+  - Moya/Core (14.0.0-beta.6):
+    - Alamofire (= 5.0.0-rc.3)
+  - Moya/RxSwift (14.0.0-beta.6):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - MoyaSugar (1.3.2):
+    - MoyaSugar/Core (= 1.3.2)
+  - MoyaSugar/Core (1.3.2):
+    - Moya (>= 14.0.0-beta.2)
+  - MoyaSugar/RxSwift (1.3.2):
+    - Moya/RxSwift (>= 14.0.0-beta.2)
+    - MoyaSugar/Core
+    - RxSwift (>= 5.0.0)
+  - Nimble (8.0.5)
+  - PINCache (3.0.1-beta.7):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.7)
+    - PINCache/Core (= 3.0.1-beta.7)
+  - PINCache/Arc-exception-safe (3.0.1-beta.7):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.7):
+    - PINOperation (~> 1.1.1)
+  - PINOperation (1.1.2)
+  - PINRemoteImage/Core (3.0.0-beta.14):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.14):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.14):
+    - PINCache (= 3.0.1-beta.7)
+    - PINRemoteImage/Core
+  - Pure (1.1.2):
+    - Pure/Core (= 1.1.2)
+  - Pure/Core (1.1.2)
+  - Pure/Stub (1.1.2):
+    - Pure/Core
+  - Quick (2.2.0)
+  - ReactorKit (2.0.1):
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCocoa-Texture (3.1.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+    - Texture (~> 2.7)
+  - RxCodable (1.0.0):
+    - RxCodable/Core (= 1.0.0)
+  - RxCodable/Core (1.0.0):
+    - RxSwift (~> 5.0)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxDataSources-Texture (1.2.5):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+    - Texture (>= 2.7)
+  - RxKeyboard (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - RxViewController (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - Stubber (1.5.0)
+  - SwiftLint (0.38.2)
+  - SwiftyColor (1.2.0)
+  - SwiftyImage (1.5.1)
+  - Swinject (2.7.1)
+  - SwinjectAutoregistration (2.7.0):
+    - Swinject (~> 2.7)
+  - Texture (2.8.1):
+    - Texture/AssetsLibrary (= 2.8.1)
+    - Texture/Core (= 2.8.1)
+    - Texture/MapKit (= 2.8.1)
+    - Texture/Photos (= 2.8.1)
+    - Texture/PINRemoteImage (= 2.8.1)
+    - Texture/Video (= 2.8.1)
+  - Texture/AssetsLibrary (2.8.1):
+    - Texture/Core
+  - Texture/Core (2.8.1)
+  - Texture/MapKit (2.8.1):
+    - Texture/Core
+  - Texture/Photos (2.8.1):
+    - Texture/Core
+  - Texture/PINRemoteImage (2.8.1):
+    - PINRemoteImage/iOS (= 3.0.0-beta.14)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (2.8.1):
+    - Texture/Core
+  - Then (2.6.0)
+  - URLNavigator (2.3.0)
+
+DEPENDENCIES:
+  - BonMot
+  - CGFloatLiteral
+  - CocoaLumberjack/Swift
+  - Moya (= 14.0.0-beta.6)
+  - Moya/RxSwift (= 14.0.0-beta.6)
+  - MoyaSugar (= 1.3.2)
+  - MoyaSugar/RxSwift (= 1.3.2)
+  - Nimble
+  - Pure
+  - Pure/Stub
+  - Quick
+  - ReactorKit
+  - RxCocoa
+  - RxCocoa-Texture
+  - RxCodable
+  - RxDataSources
+  - RxDataSources-Texture
+  - RxKeyboard
+  - RxOptional
+  - RxRelay
+  - RxSwift
+  - RxViewController
+  - Stubber
+  - SwiftLint
+  - SwiftyColor
+  - SwiftyImage
+  - Swinject
+  - SwinjectAutoregistration
+  - Texture (from `https://github.com/TextureGroup/Texture.git`, branch `releases/p7.37`)
+  - Then
+  - URLNavigator
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BonMot
+    - CGFloatLiteral
+    - CocoaLumberjack
+    - Differentiator
+    - Moya
+    - MoyaSugar
+    - Nimble
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - Pure
+    - Quick
+    - ReactorKit
+    - RxCocoa
+    - RxCocoa-Texture
+    - RxCodable
+    - RxDataSources
+    - RxDataSources-Texture
+    - RxKeyboard
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - RxViewController
+    - Stubber
+    - SwiftLint
+    - SwiftyColor
+    - SwiftyImage
+    - Swinject
+    - SwinjectAutoregistration
+    - Then
+    - URLNavigator
+
+EXTERNAL SOURCES:
+  Texture:
+    :branch: releases/p7.37
+    :git: https://github.com/TextureGroup/Texture.git
+
+CHECKOUT OPTIONS:
+  Texture:
+    :commit: dab927bb22b5ca4ec90c89a3b3e7278a2c04b923
+    :git: https://github.com/TextureGroup/Texture.git
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  BonMot: aa82119ff2ffa184223d8a31c72aed84fbb009e0
+  CGFloatLiteral: 0328648f666e3cb2263d5ee3972df9d320786d25
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Moya: d4821fbcb3e784f34d2f82869e6855057a0b85d1
+  MoyaSugar: 2dc7009e9997d13768bfb7c0bd5a1fd27314d61b
+  Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
+  PINCache: 7cb9ae068c8f655717f7c644ef1dff9fd573e979
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: 81bbff853acc71c6de9e106e9e489a791b8bbb08
+  Pure: da92a66df10fc902db96290083c121f84ee73d6f
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  ReactorKit: a63c5e11e0fd32d59d672e54178b0ed2876b764b
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxCocoa-Texture: 90abb54f5d153746fe414f4d04e6d2e6cf91d70e
+  RxCodable: 468b37793b66d804a5b1be16e817d7aab408b52b
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxDataSources-Texture: 3606ddbd1b03773d02c8d03bda74fc5f171d6c0f
+  RxKeyboard: 6683c4344304a00f943c158bd8a43ce5469c82a7
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
+  Stubber: 6cf1160d37f0d1da7afbe1892f65bb7d5984bba4
+  SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
+  SwiftyColor: ac23e6c0b561838c1ef0f554ff170cceba14546b
+  SwiftyImage: 88a8c90ee3963a498de728c4ccdb079b4820cef0
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
+  Texture: 6811322192a44ed35bcd53772aa8df8965d9796b
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+  URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
+
+PODFILE CHECKSUM: 6f01bf59666be5df68df10151da2291951f6386a
+
+COCOAPODS: 1.8.3

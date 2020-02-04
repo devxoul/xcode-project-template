@@ -1,0 +1,62 @@
+targets:
+  MyApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Resources
+      - path: Supporting Files
+    dependencies:
+      - sdk: Foundation.framework
+      - sdk: UIKit.framework
+    attributes:
+      ProvisioningStyle: Manual
+    preBuildScripts:
+    - name: Highlight TODO and FIXME
+      script: |
+        if [[ -z "${GITHUB_WORKFLOW}" ]]; then
+          ${PODS_ROOT}/SwiftLint/swiftlint lint \
+            --config "${SRCROOT}/.swiftlint-todo.yml" \
+            --path "${SRCROOT}/Projects/MyApp"
+        fi
+    - name: SwiftLint
+      script: |
+        if [[ -z "${GITHUB_WORKFLOW}" ]]; then
+          ${PODS_ROOT}/SwiftLint/swiftlint lint \
+            --config "${SRCROOT}/.swiftlint.yml" \
+            --path "${SRCROOT}/Projects/MyApp"
+        fi
+    settings:
+      base:
+        PRODUCT_NAME: MyApp
+        PRODUCT_BUNDLE_IDENTIFIER: com.myapp.ios
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        INFOPLIST_FILE: "$(SRCROOT)/Projects/MyApp/Supporting Files/Info.plist"
+        TARGETED_DEVICE_FAMILY: 1
+        DEVELOPMENT_TEAM: N2C267LBVY
+        PROVISIONING_PROFILE_SPECIFIER: Alone Social Club App Store
+        CODE_SIGN_ENTITLEMENTS: ${SRCROOT}/Projects/MyApp/Supporting Files/MyApp.entitlements
+      configs:
+        debug:
+          CODE_SIGN_IDENTITY: Apple Developer
+        release:
+          CODE_SIGN_IDENTITY: Apple Distribution
+
+  MyAppTests:
+    templates: [UnitTest]
+    templateAttributes:
+      testTarget: MyApp
+
+schemes:
+  MyApp:
+    build:
+      targets:
+        MyApp: all
+        MyAppTests: [test]
+    run:
+      environmentVariables:
+        OS_ACTIVITY_MODE: disable
+    test:
+      gatherCoverageData: true
+      targets: [MyAppTests]
