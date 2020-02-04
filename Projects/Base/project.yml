@@ -1,28 +1,27 @@
-targetTemplates:
-  Framework:
+targets:
+  Base:
     type: framework
     platform: iOS
     sources:
-      - path: ${target_name}/Sources
+      - path: Sources
     dependencies:
       - sdk: Foundation.framework
-      - target: Base
     settings:
-      PRODUCT_NAME: ${target_name}
+      PRODUCT_NAME: Base
       PRODUCT_BUNDLE_IDENTIFIER: $(PRODUCT_NAME)
       INFOPLIST_FILE: $(SRCROOT)/Projects/Info.plist
     scheme:
       testTargets:
-        - ${target_name}Tests
+        - BaseTests
       gatherCoverageData: true
 
-  UnitTest:
+  BaseTests:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - path: ${testTarget}/Tests
+      - path: Tests
     dependencies:
-      - target: ${testTarget}
+      - target: Base
       - target: Testing
     settings:
       WRAPPER_EXTENSION: xctest

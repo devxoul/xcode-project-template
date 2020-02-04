@@ -42,14 +42,17 @@ target 'MyApp' do
   pod 'CocoaLumberjack/Swift'
 
   # Misc.
-  pod 'Then'
   pod 'URLNavigator'
-  pod 'CGFloatLiteral'
   pod 'SwiftLint'
 
   target 'MyAppTests' do
     inherit! :search_paths
   end
+end
+
+target 'Base' do
+  pod 'Then'
+  pod 'CGFloatLiteral'
 end
 
 target 'Testing' do

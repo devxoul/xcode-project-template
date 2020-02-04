@@ -9,6 +9,7 @@ targets:
     dependencies:
       - sdk: Foundation.framework
       - sdk: UIKit.framework
+      - target: Base
     attributes:
       ProvisioningStyle: Manual
     preBuildScripts:
