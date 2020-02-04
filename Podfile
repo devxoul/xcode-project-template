@@ -49,9 +49,11 @@ target 'MyApp' do
 
   target 'MyAppTests' do
     inherit! :search_paths
-
-    pod 'Quick'
-    pod 'Nimble'
-    pod 'Stubber'
   end
+end
+
+target 'Testing' do
+  pod 'Quick'
+  pod 'Nimble'
+  pod 'Stubber'
 end

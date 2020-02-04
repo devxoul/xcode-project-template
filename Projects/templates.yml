@@ -22,6 +22,7 @@ targetTemplates:
       - path: ${testTarget}/Tests
     dependencies:
       - target: ${testTarget}
+      - target: Testing
     settings:
       WRAPPER_EXTENSION: xctest
       PRODUCT_NAME: ${target_name}

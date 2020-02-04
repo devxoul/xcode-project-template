@@ -20,11 +20,14 @@ schemes:
     build:
       targets:
         MyApp: test
+        Testing: test
     test:
       gatherCoverageData: true
       targets:
         - MyAppTests
+        - TestingTests
 
 include:
   - Projects/templates.yml
   - Projects/MyApp/project.yml
+  - Projects/Testing/project.yml
