@@ -10,6 +10,7 @@ targets:
       - sdk: Foundation.framework
       - sdk: UIKit.framework
       - target: Base
+      - target: Logging
     attributes:
       ProvisioningStyle: Manual
     preBuildScripts:

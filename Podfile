@@ -38,9 +38,6 @@ target 'MyApp' do
   pod 'SwiftyColor'
   pod 'SwiftyImage'
 
-  # Logging
-  pod 'CocoaLumberjack/Swift'
-
   # Misc.
   pod 'URLNavigator'
   pod 'SwiftLint'
@@ -53,6 +50,10 @@ end
 target 'Base' do
   pod 'Then'
   pod 'CGFloatLiteral'
+end
+
+target 'Logging' do
+  pod 'CocoaLumberjack/Swift'
 end
 
 target 'Testing' do

@@ -1,0 +1,8 @@
+targets:
+  Logging:
+    templates: [Framework]
+
+  LoggingTests:
+    templates: [UnitTest]
+    templateAttributes:
+      testTarget: Logging
